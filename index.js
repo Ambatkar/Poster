@@ -16,7 +16,7 @@ app.use(express.static('static'));
 
 // Setting up Ejs
 app.set('view engine', 'ejs');
-app.set('view', './view');
+app.set('views', './view');
 
 
 app.listen(port, function(err){
