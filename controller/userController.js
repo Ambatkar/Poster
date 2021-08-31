@@ -1,6 +1,6 @@
 const express= require('express');
 const userList = require('../model/userListdb')
-
+const passport = require("passport");
 
 
 module.exports.homePage = function(req,res){
@@ -46,3 +46,10 @@ module.exports.signup_action = function(req,res){
     })
     res.redirect('/');
 };
+
+
+module.exports.createSession = function(req,res){
+    console.log(req)
+    return res.end('<h1>profile</h1>');
+
+}
