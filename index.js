@@ -3,6 +3,9 @@ const http = require("https");
 const express = require("express");
 const port = 8000;
 
+// Importing Mongoose
+const posterdb  = require('./config/mongoose')
+
 // creating a Express Object 
 const app = express();
 
