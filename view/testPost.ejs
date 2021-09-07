@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <div class='float-box' id='max-res'></div>
+        <nav>
+
+        </nav>
+        <div class='container'>
+            <div class='profile-container'>
+                <div class='profile-box'>                
+                    <img src='./img/profile.png' class='img-mini'>
+                    <div class='profile-tag'>
+                        <div  class='profile-name'>Pushkar Ambatkar</div>
+                        <div class='profile-mail'>p.ambatkar123@gmail.com</div>
+                    </div>
+                </div>
+                <div class='profile-button'>     
+                <button>Profile</button>
+                <button>Logout</button>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-card">
+                    <div class="profile-mail">Pushkar Ambatkar</div>
+                    <p>The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence.</p>
+                    
+                    <div class="post-options">
+                    <div class="profile-mail margin-padding"><i class="far fa-heart"></i> Like</div>
+                    <div class="profile-mail margin-padding"><i class="far fa-comment"></i> Comment</div>
+                    <div class="profile-mail margin-padding"><i class="fas fa-share-alt-square"></i> Share</div>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="profile-mail">Nikola Tesla</div>
+                    <p>Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.</p>
+                    <div class="post-options">
+                        <div class="profile-mail margin-padding"><i class="far fa-heart"></i> Like</div>
+                        <div class="profile-mail margin-padding"><i class="far fa-comment"></i> Comment</div>
+                        <div class="profile-mail margin-padding"><i class="fas fa-share-alt-square"></i> Share</div>
+                        </div>
+                </div>
+                <div class="post-card">
+                    <div class="profile-mail">Nikola Tesla</div>
+                    <p>The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence.</p>
+                    <div class="post-options">
+                        <div class="profile-mail margin-padding"><i class="far fa-heart"></i> Like</div>
+                        <div class="profile-mail margin-padding"><i class="far fa-comment"></i> Comment</div>
+                        <div class="profile-mail margin-padding"><i class="fas fa-share-alt-square"></i> Share</div>
+                        </div>
+                </div>
+            </div>
+            <div class='profile-container'>
+                <div class='profile-box'>                
+                    <img src='./img/profile.png' class='img-mini'>
+                    <div class='profile-tag'>
+                        <div  class='profile-name'>Pushkar Ambatkar</div>
+                        <div class='profile-mail'>p.ambatkar123@gmail.com</div>
+                    </div>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+        <script>
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            var res = document.getElementById('max-res');
+            res.innerHTML = w+' x '+h;
+            console.log('*************************',w,' x ',h);
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

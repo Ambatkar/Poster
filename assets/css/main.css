@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    
+}
+body{
+    background-color:#eee;
+}
+.container{
+    max-width: 1440px;
+    margin: 0px auto;
+    display:flex;
+    align-items: stretch;
+    flex-direction: row;    
+}
+
+/*------------------------------------- Navigation bar */
+
+nav{
+    position: relative;
+   
+    height: 56px;
+    width: 100%;
+    background-color:white;
+}
+
+/*------------------------------------- Side profile Layout */
+.profile-container{
+    display: flex;
+    max-width:300px;
+    height: 100%;
+    flex-direction: column;    
+    background-color:#fff;
+    padding:  10px;
+    margin:  10px;
+    border-radius: 12px;
+}
+
+.profile-box{
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+
+.profile-tag{
+   margin: 0px 15px;
+
+}
+.profile-name{
+    font-size:16px;
+}
+
+.profile-mail{
+    font-size:14px;
+    color: #666;
+}
+
+.img-mini{
+    width:48px;
+    height:48px;
+    clip-path: circle();
+}
+
+
+.float-box{
+    display:block;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+}
+
+
+.post-options{
+    display:flex;
+    flex-direction:row;
+}
+
+.margin-padding{
+    margin: 5px;
+    padding: 5px;
+}
+
+  /* -------------------------------------- Button */
+.profile-button{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+button{
+    border: none;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.profile-button button {
+    width:100%;
+    margin: 20px 5px 5px;
+}
+
+
+
+button:hover{
+    background-color: white;
+    border: 1px solid #333;
+    transition: 0.3s;
+    box-shadow: rgba(167, 167, 167, 0.226) 0px 3px 10px;
+}
+
+
+
+/*------------------------------------- Side profile Layout */
+.post-container{
+    width:100%;
+}
+
+.post-card{
+    
+    background-color:#fff;
+    padding:  10px;
+    margin:  10px;
+    border-radius: 12px;
+}
+.post-card p{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+    .profile-container{
+        max-width: 100%;
+    }
+}

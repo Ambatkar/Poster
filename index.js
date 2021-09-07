@@ -1,7 +1,7 @@
 //Importing Library
 const http = require("https");
 const express = require("express");
-const port = 8000;
+const port = 8080;
 const session = require("express-session");
 // adding Passport 
 const passport = require("passport");
@@ -18,6 +18,8 @@ const app = express();
 //Making Request Useable
 app.use(express.urlencoded()); 
 
+// Adding Asset of Node
+app.use(express.static('assets'));
 
 
 // Setting up Ejs

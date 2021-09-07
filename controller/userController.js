@@ -27,7 +27,7 @@ module.exports.login_action = function(req,res){
             return ;
         } 
         console.log("*****************************User Found \n", userOne);
-        res.end("<h1>Profile Page</h1>");
+        res.render('testPost');
     });
 };
 
@@ -50,6 +50,5 @@ module.exports.signup_action = function(req,res){
 
 module.exports.createSession = function(req,res){
     console.log(req)
-    return res.end('<h1>profile</h1>');
-
+    return res.render('testPost');
 }

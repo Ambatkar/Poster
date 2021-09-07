@@ -4,8 +4,8 @@ const userList = require('../model/userListdb');
 
 
 passport.use(new LocalStrategy({
-    usernameField: 'email'
-},function(s_email,s_password,done){
+    usernameField: 's_email'
+},function(email,password,done){
     userList.findOne({
         email: email
     },function(err,user){
